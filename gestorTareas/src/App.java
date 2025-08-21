@@ -11,7 +11,7 @@ public class App {
     public static void main(String[] args) {
         Proyecto miProyecto = new Proyecto();
         miProyecto.agregarTarea(new Bug(1234, "Ejemplo", false, 10));
-        miProyecto.agregarTarea(new Feature(4321, "Sopenco", false, "Juan Carlos"));
+        miProyecto.agregarTarea(new Feature(4321, "Sopenco", false, "JuanCarlos"));
         miProyecto.agregarTarea(new Feature(2, "Sopenco", false, "Pedro"));
 
         System.out.println("De que developer te interesa recibir su lista de tareas?");

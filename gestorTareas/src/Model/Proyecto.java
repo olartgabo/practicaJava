@@ -22,9 +22,11 @@ public class Proyecto {
     public List<Tarea> obtenerFeaturesPorDeveloper(String nombre){
         List<Tarea> featuresEncontradas = new ArrayList<>();
         for(Tarea tarea:tareas){
+            if(tarea instanceof Feature){
             Feature feature = (Feature) tarea;
             if(feature.getDeveloperAsignado().equalsIgnoreCase(nombre)){
                 featuresEncontradas.add(feature);
+            }
             }
         }
         return featuresEncontradas;
